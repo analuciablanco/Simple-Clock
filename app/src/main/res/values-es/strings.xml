@@ -7,7 +7,7 @@
     <string name="no_days_selected">Ningún día seleccionado</string>
     <string name="timer">Temporizador</string>
     <string name="lap">Vuelta</string>
-    <string name="stopwatch_stopped">El cronómetro s eha detenido</string>
+    <string name="stopwatch_stopped">El cronómetro se ha detenido</string>
     <string name="timer_stopped">El temporizador se ha detenido</string>
     <string name="max_reminder_duration">Máxima duración de recordatorio</string>
     <string name="time_expired">Tiempo terminado</string>

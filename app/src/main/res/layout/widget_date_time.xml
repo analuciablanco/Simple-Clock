@@ -51,7 +51,7 @@
             android:includeFontPadding="false"
             android:maxLines="1"
             android:textSize="@dimen/normal_text_size"
-            tools:text="Mon, 1 January" />
+            tools:text="Morndas, 1 Morning Star" />
 
         <RelativeLayout
             android:id="@+id/widget_alarm_holder"

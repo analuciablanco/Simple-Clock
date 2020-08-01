@@ -43,9 +43,111 @@ fun Context.getFormattedDate(calendar: Calendar): String {
     val dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH)
     val month = calendar.get(Calendar.MONTH)
 
-    val dayString = resources.getStringArray(R.array.week_days_short)[dayOfWeek]
-    val monthString = resources.getStringArray(R.array.months)[month]
-    return "$dayString, $dayOfMonth $monthString"
+    //val dayString = resources.getStringArray(R.array.week_days)[dayOfWeek]
+    var originalDayString = resources.getStringArray(R.array.week_days)[dayOfWeek]
+    var dayString = ""
+
+    if (originalDayString == "Monday" || originalDayString == "Lunes") {
+        dayString = "Morndas"
+    } else {
+        if (originalDayString == "Tuesday" || originalDayString == "Martes") {
+            dayString = "Tirdas"
+        }
+        else {
+            if (originalDayString == "Wednesday" || originalDayString == "Miércoles") {
+                dayString = "Middas"
+            }
+            else {
+                if (originalDayString == "Thursday" || originalDayString == "Jueves") {
+                    dayString = "Turdas"
+                }
+                else {
+                    if (originalDayString == "Friday" || originalDayString == "Viernes") {
+                        dayString = "Fredas"
+                    }
+                    else {
+                        if (originalDayString == "Saturday" || originalDayString == "Sábado") {
+                            dayString = "Loredas"
+                        }
+                        else {
+                            if (originalDayString == "Sunday" || originalDayString == "Domingo") {
+                                dayString = "Sundas"
+                            }
+                            else {
+                                dayString = resources.getStringArray(R.array.week_days)[dayOfWeek]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    var originalMonthString = resources.getStringArray(R.array.months)[month]
+    var monthString = ""
+
+    if (originalMonthString == "January") {
+        monthString = "Morning Star"
+    } else {
+        if (originalMonthString == "February") {
+            monthString = "Sun's Dawn"
+        }
+        else {
+            if (originalMonthString == "March") {
+                monthString = "First Seed"
+            }
+            else {
+                if (originalMonthString == "April") {
+                    monthString = "Rain's Hand"
+                }
+                else {
+                    if (originalMonthString == "May") {
+                        monthString = "Second Seed"
+                    }
+                    else {
+                        if (originalMonthString == "June") {
+                            monthString = "Mid Year"
+                        }
+                        else {
+                            if (originalMonthString == "July") {
+                                monthString = "Sun's Height"
+                            }
+                            else {
+                                if (originalMonthString == "August") {
+                                    monthString = "Last Seed"
+                                } else {
+                                    if (originalMonthString == "September") {
+                                        monthString = "Hearthfire"
+                                    }
+                                    else {
+                                        if (originalMonthString == "October") {
+                                            monthString = "Frost Fall"
+                                        }
+                                        else {
+                                            if (originalMonthString == "November") {
+                                                monthString = "Sun's Dusk"
+                                            }
+                                            else {
+                                                if (originalMonthString == "December") {
+                                                    monthString = "Evening Star"
+                                                }
+                                                else {
+                                                    monthString = resources.getStringArray(R.array.months)[month]
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    return "$dayString, $dayOfMonth of $monthString"
 }
 
 fun Context.getEditedTimeZonesMap(): HashMap<Int, String> {
