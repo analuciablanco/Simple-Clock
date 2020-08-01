@@ -1,4 +1,4 @@
-PERSONAL NOTE FROM analuciablanco: this is my first time using kotling, so I'm aware that it's not optimized (but still learning!).
+PERSONAL NOTE FROM analuciablanco: this is my first time using kotlin, so I'm aware that it's not optimized (but still learning!).
 
 -----------------------------------------------------------------------------------------------------------------------------------
 
