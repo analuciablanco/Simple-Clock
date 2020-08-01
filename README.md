@@ -1,3 +1,7 @@
+PERSONAL NOTE FROM analuciablanco: this is my first time using kotling, so I'm aware that it's not optimized (but still learning!).
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
 # Simple Clock
 <img alt="Logo" src="fastlane/metadata/android/en-US/images/icon.png" width="120" />
 
